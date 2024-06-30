@@ -56,14 +56,6 @@ int main()
     return 0;
 }
 
-void Book(string text)
-{
-    time_t now = time(0);
-    char* dt = ctime(&now);
-    ofstream Book("E:/lab lip/ConsoleApplication1313/ConsoleApplication1313/Book.txt", ios_base::app);
-    Book << dt << text << endl << endl;
-    Book.close();
-}
 bool Authentication()
 {
     cout << "Аутентификация" << endl;
